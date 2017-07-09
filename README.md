@@ -13,3 +13,6 @@ And want to leave registered somewhere.
 
 # Back-end
 This is the back-end code powered by [Laravel](https://github.com/laravel/laravel).
+
+# Development
+Hapenning in the `develop` branch, just checkit out!
