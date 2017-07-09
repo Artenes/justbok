@@ -57,7 +57,10 @@ class Handler extends ExceptionHandler
     protected function unauthenticated($request, AuthenticationException $exception)
     {
         if ($request->expectsJson()) {
-            return response()->json(['error' => 'Unauthenticated.'], 401);
+            return response()->json([
+                'message' => trans('auth.authentication_error'),
+                'data' => trans('auth.must_be_loged_in'),
+            ], 401);
         }
 
         return redirect()->guest(route('login'));
