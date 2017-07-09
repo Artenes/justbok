@@ -12,7 +12,18 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'Justbok'),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Current API version
+    |--------------------------------------------------------------------------
+    |
+    | Defines the current API version. This will not disallow other API versions
+    | but serves to indicate which one is being used currently.
+    */
+
+    'version' => env('APP_VERSION', 'v1'),
 
     /*
     |--------------------------------------------------------------------------
